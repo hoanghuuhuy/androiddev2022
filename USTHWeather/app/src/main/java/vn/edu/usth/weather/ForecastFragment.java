@@ -4,14 +4,12 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.example.usthweather.R;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -64,25 +62,21 @@ public class ForecastFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        LinearLayout ll = new LinearLayout(getActivity());
-        ll.setBackgroundColor(0x20FF0000);
+        /*LinearLayout ll = new LinearLayout(getActivity());
+        ll.setBackgroundColor(0x80FF0000);
         ll.setOrientation(LinearLayout.VERTICAL);
 
-        TextView day = new TextView(getActivity());
-        day.setText("it is a sunny day");
-        ImageView sunny =  new ImageView(getActivity());
+        TextView monday = new TextView(getActivity());
+        monday.setText("Monday is a sunny day.");
+        ImageView sunny = new ImageView(getActivity());
         sunny.setImageResource(R.drawable.sunny);
 
-        ll.addView(day);
+        ll.addView(monday);
         ll.addView(sunny);
 
-        TextView tomorrow = new TextView(getActivity());
-        day.setText("it is a rainny day");
-        ImageView rainny =  new ImageView(getActivity());
-        rainny.setImageResource(R.drawable.rainny);
-
-        ll.addView(tomorrow);
-        ll.addView(rainny);
-        return ll;
+        return ll;*/
+        View v = inflater.inflate(R.layout.fragment_forecast, container, false);
+        v.setBackgroundColor(0x20FF0000);
+        return v;
     }
 }
